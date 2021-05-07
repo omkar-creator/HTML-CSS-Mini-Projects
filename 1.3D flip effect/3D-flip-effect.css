@@ -1,0 +1,89 @@
+*{
+    font-family:sans-serif;
+}
+.title{
+    text-align: center;
+    margin: 0px auto 30px 0px;
+    color: blueviolet;
+    background-color: rgb(248, 182, 182);
+    border: 3px solid black;
+    border-style:dotted;
+}
+.flex{
+    display: flex;
+}
+.flip-card{
+     width: 325px;
+     height: 350px;
+     margin: auto;
+     
+}
+.flip-card-back{
+    background-color: rgb(241, 255, 160);
+    color: black;
+    border: 2px solid black;
+    border-radius: 15px;
+    transform: rotateY(180deg);
+    z-index: 1;
+    opacity: 0;
+}
+.flip-card-back:hover{
+    opacity: 1;
+}
+.back-header{
+    text-align: center;
+    height: 398px;
+}
+img{
+    width: 50%;
+    margin-top: 20px;
+}
+.flip-card-inner{
+    position: relative;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: presereve-3d;
+
+}
+.flip-card-front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+.icon{
+    display: flex;
+    margin-left: 50px;
+}
+.btn{
+    
+    display: flex;
+    
+}
+#btn1{
+    border: 1px solid black;
+    margin: 5px 5px 0px 30px;
+    width: 120px;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: black;
+}
+#btn1:hover{
+    background-color: black;
+    color: white;
+    
+}
+.tit{
+    font-family: cursive; 
+    color: tomato;
+    background-color: rgb(85, 240, 224);
+    margin-top: 100px;
+    text-align: center;
+    border: 2px solid blueviolet;
+}
+
+
